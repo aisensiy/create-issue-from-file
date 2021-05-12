@@ -45,6 +45,8 @@ const util_1 = __nccwpck_require__(669);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            core.warning(`This action's default branch has been renamed to "main"`);
+            core.warning(`Referencing this action with "@master" is deprecated and will stop working after June 30th 2021`);
             const inputs = {
                 token: core.getInput('token'),
                 repository: core.getInput('repository'),
